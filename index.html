@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+      // Add JavaScript to create the slideshow here
+      var slideIndex = 0;
+      var slides = document.getElementsByClassName("slideshow-image");
+
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+
+      window.onload = showSlides;
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to our website!</h1>
+    </div>
+    <div class="slideshow-container">
+      <a href="https://www.sharkconservancy.org/great-white-shark/">
+        <img class="slideshow-image" src="great-white-shark.jpg" style="display: block;">
+      </a>
+      <a href="https://www.sharkconservancy.org/bull-shark/">
+        <img class="slideshow-image" src="bull-shark.jpg" style="display: none;">
+      </a>
+      <a href="https://www.sharkconservancy.org/tiger-shark/">
+        <img class="slideshow-image" src="tiger-shark.jpg" style="display: none;">
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="main">
+      <p>Our website is optimized for mobile devices. We offer a variety of products and services.</p>
+    </div>
+    <div class="footer">
+      <p>Copyright ©2022 by XYZ Company</p>
+    </div>
+  </body>
+</html>
