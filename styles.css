@@ -11,8 +11,13 @@ body {
   padding: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .header {
-  background-color: #4CAF50;
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 1em;
@@ -30,8 +35,10 @@ body {
   color: white;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.main {
+ padding: 1em;
 }
 
+.footer {
+ padding: 1em;
+}
