@@ -1,0 +1,30 @@
+/* Add CSS styles in the styles.css file */
+/* Mobile-specific styles */
+@media only screen and (max-width: 600px) {
+  /* Add styles for small screens here */
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  padding: 0.5em;
+}
+
+.navbar a {
+  color: white;
