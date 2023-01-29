@@ -28,8 +28,9 @@ body {
 
 .navbar a {
   color: white;
+}
 
-.slideshow-container img {
+img {
     width: 100%;
     height: auto;
 }
